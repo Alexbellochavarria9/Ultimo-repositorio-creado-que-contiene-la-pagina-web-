@@ -9,7 +9,7 @@ document.getElementById('survey-form').addEventListener('submit', function(e) {
     });
 
     // Enviar datos como JSON
-    fetch("https://script.google.com/u/0/home/projects/175N-rMfXSyks9Tow0qNwqWNVOykyZkzJS3ozu77-Jwy495MZ_NYcu3P-/edit", { // Reemplaza con tu URL de Apps Script
+    fetch("https://script.google.com/macros/s/AKfycbx3X6tDRJLomD8vIUN6Gl75Eqg1h4YKKneF6PWJkl20_0X4sJlbf5N831grb7O9dK4/exec", { // Reemplaza con tu URL de Apps Script
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

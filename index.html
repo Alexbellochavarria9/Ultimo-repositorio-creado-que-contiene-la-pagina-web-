@@ -3,130 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuesta de Aceite de Coco - Administración Turística y Hotelera</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Encuesta de Aceite de Coco</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Encuesta sobre el uso del Aceite de Coco</h1>
-        <p>Buenas tardes, somos estudiantes de la Universidad Multidisciplinaria Ricardo Morales Avilés, actualmente estamos cursando el cuarto año de la carrera de Administración Turística y Hotelera, y necesitamos que nos regale unos minutos de su tiempo para llenar la siguiente encuesta, esto debido a que estamos realizando un estudio de mercado acerca del aceite de coco en el uso de belleza y cuidado personal.</p>
-        
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdzGFxyz7wTFX5e4ebggd-F0kzjPjf5T3aKdJ5kKpHFGIK89w/viewform" method="POST" target="_blank">
-            <div class="question">
-                <label for="rivas">1. ¿Es habitante del municipio de Rivas?</label><br>
-                <input type="radio" name="rivas" value="Si"> Sí
-                <input type="radio" name="rivas" value="No"> No
-                <input type="radio" name="rivas" value="Prefiero no responder"> Prefiero no responder
-            </div>
+    <h1>Encuesta de Aceite de Coco</h1>
+    <form action="https://script.google.com/macros/s/AKfycbw_HjVAWPIslZbBhaa9p-kT2dIZhbmZ0X9NAp27HNjmOVEY5DFo1HKUTTrfMUbPU0ny/exec" method="POST">
+        <label>¿Es habitante del municipio de Rivas?</label><br>
+        <input type="radio" name="habitante" value="Sí"> Sí
+        <input type="radio" name="habitante" value="No"> No
+        <input type="radio" name="habitante" value="Prefiero no responder"> Prefiero no responder<br><br>
 
-            <div class="question">
-                <label for="sexo">2. Sexo</label><br>
-                <input type="radio" name="sexo" value="F"> F
-                <input type="radio" name="sexo" value="M"> M
-            </div>
+        <label>Sexo:</label><br>
+        <input type="radio" name="sexo" value="F"> F
+        <input type="radio" name="sexo" value="M"> M<br><br>
 
-            <div class="question">
-                <label for="edad">3. Rango de edad</label><br>
-                <input type="radio" name="edad" value="15-25"> 15-25
-                <input type="radio" name="edad" value="26-35"> 26-35
-                <input type="radio" name="edad" value="36-45"> 36-45
-                <input type="radio" name="edad" value="46-55"> 46-55
-                <input type="radio" name="edad" value="56-70"> 56-70
-            </div>
+        <label>Rango de edad:</label><br>
+        <input type="radio" name="edad" value="15-25"> 15-25
+        <input type="radio" name="edad" value="26-35"> 26-35
+        <input type="radio" name="edad" value="36-45"> 36-45
+        <input type="radio" name="edad" value="46-55"> 46-55
+        <input type="radio" name="edad" value="56-70"> 56-70<br><br>
 
-            <div class="question">
-                <label for="conoceBeneficios">4. ¿Conoce los beneficios del aceite de coco?</label><br>
-                <input type="radio" name="conoceBeneficios" value="Si"> Sí
-                <input type="radio" name="conoceBeneficios" value="No"> No
-                <input type="radio" name="conoceBeneficios" value="Prefiero no responder"> Prefiero no responder
-            </div>
+        <label>¿Conoce los beneficios del aceite de coco?</label><br>
+        <input type="radio" name="conocimiento" value="Sí"> Sí
+        <input type="radio" name="conocimiento" value="No"> No<br><br>
 
-            <div class="question">
-                <label for="comprarEmpresa">5. ¿Estaría dispuesto a comprar aceite de coco en una empresa Rivense?</label><br>
-                <input type="radio" name="comprarEmpresa" value="Si"> Sí
-                <input type="radio" name="comprarEmpresa" value="No"> No
-                <input type="radio" name="comprarEmpresa" value="Prefiero no responder"> Prefiero no responder
-            </div>
+        <label>¿Estaría dispuesto a comprar aceite de coco en una empresa Rivense?</label><br>
+        <input type="radio" name="dispuesto" value="Sí"> Sí
+        <input type="radio" name="dispuesto" value="No"> No<br><br>
 
-            <div class="question">
-                <label for="envase">6. ¿En qué envase prefieres adquirir el aceite de coco?</label><br>
-                <input type="radio" name="envase" value="100 ml"> 100 ml
-                <input type="radio" name="envase" value="30 ml"> 30 ml
-                <input type="radio" name="envase" value="160 ml"> 160 ml
-            </div>
+        <label>¿En qué envase prefieres adquirir el aceite de coco?</label><br>
+        <input type="radio" name="envase" value="30 ml"> 30 ml
+        <input type="radio" name="envase" value="100 ml"> 100 ml
+        <input type="radio" name="envase" value="160 ml"> 160 ml<br><br>
 
-            <div class="question">
-                <label for="productoCoco">7. ¿Ha adquirido algún producto natural a base de coco para cuidado personal?</label><br>
-                <input type="radio" name="productoCoco" value="Si"> Sí
-                <input type="radio" name="productoCoco" value="No"> No
-            </div>
+        <label>¿Ha adquirido algún producto natural a base de coco para cuidado personal?</label><br>
+        <input type="radio" name="producto_natural" value="Sí"> Sí
+        <input type="radio" name="producto_natural" value="No"> No<br><br>
 
-            <div class="question">
-                <label for="precioRazonable">8. ¿Considera que el precio del aceite de coco es razonable (30 ml 90cordobas)?</label><br>
-                <input type="radio" name="precioRazonable" value="Si"> Sí
-                <input type="radio" name="precioRazonable" value="No"> No
-                <input type="radio" name="precioRazonable" value="Prefiero no responder"> Prefiero no responder
-            </div>
+        <label>¿Considera que el precio del aceite de coco es razonable (30 ml 90 córdobas)?</label><br>
+        <input type="radio" name="precio" value="Sí"> Sí
+        <input type="radio" name="precio" value="No"> No<br><br>
 
-            <div class="question">
-                <label for="usos">9. ¿Para qué utilizas principalmente el aceite de coco? (Selecciona todas las opciones que apliquen)</label><br>
-                <input type="checkbox" name="usos" value="Hidratar la piel"> Hidratar la piel
-                <input type="checkbox" name="usos" value="Remover maquillaje"> Remover maquillaje
-                <input type="checkbox" name="usos" value="Acondicionar el cabello"> Acondicionar el cabello
-                <input type="checkbox" name="usos" value="Cocinar"> Cocinar
-            </div>
+        <label>¿Para qué utilizas principalmente el aceite de coco? (Selecciona todas las opciones que apliquen)</label><br>
+        <input type="checkbox" name="uso" value="Hidratar la piel"> Hidratar la piel<br>
+        <input type="checkbox" name="uso" value="Remover maquillaje"> Remover maquillaje<br>
+        <input type="checkbox" name="uso" value="Acondicionar el cabello"> Acondicionar el cabello<br>
+        <input type="checkbox" name="uso" value="Cocinar"> Cocinar<br><br>
 
-            <div class="question">
-                <label for="beneficioso">10. ¿Cree usted que el uso del aceite de coco pueda ser beneficioso para el cabello y el cuidado personal?</label><br>
-                <input type="radio" name="beneficioso" value="Si"> Sí
-                <input type="radio" name="beneficioso" value="No"> No
-                <input type="radio" name="beneficioso" value="Prefiero no responder"> Prefiero no responder
-            </div>
+        <label>¿Cree usted que el uso del aceite de coco pueda ser beneficioso para el cabello y el cuidado personal?</label><br>
+        <input type="radio" name="beneficio" value="Sí"> Sí
+        <input type="radio" name="beneficio" value="No"> No<br><br>
 
-            <div class="question">
-                <label for="factoresCompra">11. ¿Qué factores influyen más en su decisión de compra de aceite de coco?</label><br>
-                <input type="checkbox" name="factoresCompra" value="Precio"> Precio
-                <input type="checkbox" name="factoresCompra" value="Calidad"> Calidad
-                <input type="checkbox" name="factoresCompra" value="Marca"> Marca
-                <input type="checkbox" name="factoresCompra" value="Envase"> Envase
-            </div>
+        <label>¿Qué factores influyen más en su decisión de compra de aceite de coco?</label><br>
+        <input type="radio" name="factor" value="Precio"> Precio<br>
+        <input type="radio" name="factor" value="Calidad"> Calidad<br>
+        <input type="radio" name="factor" value="Marca"> Marca<br>
+        <input type="radio" name="factor" value="Envase"> Envase<br><br>
 
-            <div class="question">
-                <label for="frecuencia">12. ¿Con qué frecuencia utilizas aceite de coco en tu rutina de belleza y cuidado personal?</label><br>
-                <input type="radio" name="frecuencia" value="Nunca"> Nunca
-                <input type="radio" name="frecuencia" value="Semanal"> Semanal
-                <input type="radio" name="frecuencia" value="Diariamente"> Diariamente
-                <input type="radio" name="frecuencia" value="Quincenal"> Quincenal
-                <input type="radio" name="frecuencia" value="Mensual"> Mensual
-            </div>
+        <label>¿Con qué frecuencia utilizas aceite de coco en tu rutina de belleza y cuidado personal?</label><br>
+        <input type="radio" name="frecuencia" value="Nunca"> Nunca<br>
+        <input type="radio" name="frecuencia" value="Semanal"> Semanal<br>
+        <input type="radio" name="frecuencia" value="Diariamente"> Diariamente<br>
+        <input type="radio" name="frecuencia" value="Quincenal"> Quincenal<br>
+        <input type="radio" name="frecuencia" value="Mensual"> Mensual<br><br>
 
-            <div class="question">
-                <label for="beneficios">13. ¿Has notado algún beneficio en tu piel o cabello desde que utilizas aceite de coco?</label><br>
-                <input type="radio" name="beneficios" value="Si"> Sí
-                <input type="radio" name="beneficios" value="No"> No
-                <input type="radio" name="beneficios" value="Prefiero no responder"> Prefiero no responder
-            </div>
+        <label>¿Has notado algún beneficio en tu piel o cabello desde que utilizas aceite de coco?</label><br>
+        <input type="radio" name="beneficio_noto" value="Sí"> Sí
+        <input type="radio" name="beneficio_noto" value="No"> No<br><br>
 
-            <div class="question">
-                <label for="interesPropiedades">14. ¿Le interesaría conocer más sobre las propiedades del aceite de coco?</label><br>
-                <input type="radio" name="interesPropiedades" value="Si"> Sí
-                <input type="radio" name="interesPropiedades" value="No"> No
-                <input type="radio" name="interesPropiedades" value="Prefiero no responder"> Prefiero no responder
-            </div>
+        <label>¿Le interesaría conocer más sobre las propiedades del aceite de coco?</label><br>
+        <input type="radio" name="interes" value="Sí"> Sí
+        <input type="radio" name="interes" value="No"> No<br><br>
 
-            <div class="question">
-                <label for="informacion">15. ¿Cómo prefieres recibir información sobre el aceite de coco?</label><br>
-                <input type="radio" name="informacion" value="Redes sociales"> Redes sociales
-                <input type="radio" name="informacion" value="Publicidad en tienda"> Publicidad en tienda
-                <input type="radio" name="informacion" value="Recomendación de amigos y familiares"> Recomendación de amigos y familiares
-            </div>
+        <label>¿Cómo prefieres recibir información sobre el aceite de coco?</label><br>
+        <input type="radio" name="informacion" value="Redes sociales"> Redes sociales<br>
+        <input type="radio" name="informacion" value="Publicidad en tienda"> Publicidad en tienda<br>
+        <input type="radio" name="informacion" value="Recomendación de amigos y familiares"> Recomendación de amigos y familiares<br><br>
 
-          </select>
+        <label>¿Quién le envió la Encuesta?</label><br>
+<input type="radio" name="encuestador" value="Xochilt"> Xochilt<br>
+<input type="radio" name="encuestador" value="Fabiana"> Fabiana<br>
+<input type="radio" name="encuestador" value="Joseling"> Joseling<br>
+<input type="radio" name="encuestador" value="Gaudy"> Gaudy<br><br>
 
-          <button type="submit">Enviar</button>
-      </form>
-  </div>
-
-  <script src="script.js"></script>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
