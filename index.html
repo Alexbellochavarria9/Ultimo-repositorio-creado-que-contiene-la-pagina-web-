@@ -7,20 +7,24 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f0f8ff; /* Azul claro */
             color: #333;
             padding: 20px;
             max-width: 600px;
             margin: auto;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            border: 2px solid #1abc9c; /* Verde agua */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         h1 {
             text-align: center;
-            color: #2c3e50;
+            color: #1abc9c; /* Verde agua */
+            font-size: 28px;
+            text-transform: uppercase;
         }
         label {
             font-weight: bold;
+            color: #34495e; /* Gris oscuro */
         }
         input[type="radio"], input[type="checkbox"] {
             margin-right: 10px;
@@ -28,16 +32,20 @@
         button {
             display: block;
             width: 100%;
-            padding: 10px;
-            background-color: #3498db;
+            padding: 12px;
+            background-color: #e67e22; /* Naranja */
             color: #fff;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s ease;
         }
         button:hover {
-            background-color: #2980b9;
+            background-color: #d35400; /* Naranja oscuro */
+        }
+        input[type="radio"]:checked, input[type="checkbox"]:checked {
+            accent-color: #1abc9c; /* Personaliza el color de selección */
         }
     </style>
 </head>
@@ -118,10 +126,10 @@
         <input type="radio" name="informacion" value="Recomendación de amigos y familiares"> Recomendación de amigos y familiares<br><br>
 
         <label>¿Quién le envió la Encuesta?</label><br>
-<input type="radio" name="encuestador" value="Xochilt"> Xochilt<br>
-<input type="radio" name="encuestador" value="Fabiana"> Fabiana<br>
-<input type="radio" name="encuestador" value="Joseling"> Joseling<br>
-<input type="radio" name="encuestador" value="Gaudy"> Gaudy<br><br>
+        <input type="radio" name="encuestador" value="Xochilt"> Xochilt<br>
+        <input type="radio" name="encuestador" value="Fabiana"> Fabiana<br>
+        <input type="radio" name="encuestador" value="Joseling"> Joseling<br>
+        <input type="radio" name="encuestador" value="Gaudy"> Gaudy<br><br>
 
         <button type="submit">Enviar</button>
     </form>
